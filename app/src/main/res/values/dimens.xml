@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layoutMarginTop">8dp</dimen>
+    <dimen name="paddingStart">10dp</dimen>
+    <dimen name="paddingEnd">10dp</dimen>
+    <dimen name="maxLength">20</dimen>
+    <dimen name="maxLengthForInputTimer">10</dimen>
+    <dimen name="paddingEndForInputTimer">200dp</dimen>
+    <dimen name="paddingForButton">20dp</dimen>
+    <dimen name="scoreTextSize">20sp</dimen>
+    <dimen name="timerSize">50sp</dimen>
+    <dimen name="paddingName">15dp</dimen>
+    <dimen name="nameSize">15sp</dimen>
+    <dimen name="biasForTimerVertical">0</dimen>
+    <dimen name="biasForNameVertical">0.3</dimen>
+    <dimen name="biasForScoreVertical">0.05</dimen>
+    <dimen name="textSizeForScore">40sp</dimen>
+    <dimen name="paddingForButtonScore">50dp</dimen>
+    <dimen name="biasForButtonScoreVertical">0.4</dimen>
+    <dimen name="biasForButtonStartVertical">0.95</dimen>
+    <dimen name="biasForCongratulationTextBiasHorizontal">0.5</dimen>
+    <dimen name="biasForCongratulationTextBiasVertical">0.01</dimen>
+    <dimen name="biasForWinnerTextBiasHorizontal">0.08</dimen>
+    <dimen name="biasForWinnerTextBiasVertical">0.025</dimen>
+    <dimen name="biasForScoreTextBiasVertical">0.1</dimen>
+    <dimen name="layoutMarginTopForButtonShare">180dp</dimen>
+    <dimen name="biasVerticalForButtonShare">0.0</dimen>
+    <dimen name="biasForShowVertical">0.973</dimen>
+    <dimen name="biasForShowHorizontal">0.075</dimen>
+    <dimen name="heightForList">0dp</dimen>
+    <dimen name="weightForList">8.0</dimen>
+    <dimen name="wightForBottomLayout">2.0</dimen>
+    <dimen name="marginTopForButtonClearList">40dp</dimen>
+
+</resources>

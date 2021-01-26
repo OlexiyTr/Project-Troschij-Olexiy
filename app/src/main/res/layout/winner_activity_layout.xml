@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/winner_background"
+    tools:context=".WinnerActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congratulations"
+        android:textColor="@color/white"
+        android:textSize="@dimen/timerSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/biasForCongratulationTextBiasHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/biasForCongratulationTextBiasVertical" />
+
+
+    <TextView
+        android:id="@+id/tvNameOfWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/winnerText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/nameSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/biasForWinnerTextBiasHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="@dimen/biasForWinnerTextBiasVertical" />
+
+    <TextView
+        android:id="@+id/tvScoreOfWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoreText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/scoreTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/biasForWinnerTextBiasHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="@dimen/biasForScoreTextBiasVertical" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/btn_start_shower"
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/paddingForButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layoutMarginTopForButtonShare"
+        android:text="@string/textShare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/biasForCongratulationTextBiasHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="@dimen/biasVerticalForButtonShare" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_check_list"
+        android:padding="@dimen/paddingForButton"
+        android:text="@string/showListOfWinners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/biasForShowHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="@dimen/biasForShowVertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

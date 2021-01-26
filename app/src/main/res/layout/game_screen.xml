@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_screen_background"
+    tools:context=".GameScoreActivity">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_game_screen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/timerSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/biasForTimerVertical" />
+
+    <TextView
+        android:id="@+id/tvNameA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:padding="@dimen/paddingName"
+        android:text="@string/nameOfATeam"
+        android:textColor="@color/white"
+        android:textSize="@dimen/nameSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvNameB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/biasForNameVertical" />
+
+    <TextView
+        android:id="@+id/tvNameB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="@dimen/paddingName"
+        android:text="@string/nameOfBTeam"
+        android:textColor="@color/white"
+        android:textSize="@dimen/nameSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvNameA"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/biasForNameVertical" />
+
+    <TextView
+        android:id="@+id/scoreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeForScore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/scoreB"
+        app:layout_constraintTop_toBottomOf="@id/tvNameA"
+        app:layout_constraintVertical_bias="@dimen/biasForScoreVertical" />
+
+    <TextView
+        android:id="@+id/scoreB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeForScore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/scoreA"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNameB"
+        app:layout_constraintVertical_bias="@dimen/biasForScoreVertical" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScoreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_score_a_shower"
+        android:enabled="false"
+        android:padding="@dimen/paddingForButtonScore"
+        android:text="@string/counter_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnScoreB"
+        app:layout_constraintTop_toBottomOf="@id/scoreA"
+        app:layout_constraintVertical_bias="@dimen/biasForButtonScoreVertical" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScoreB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_score_b_shower"
+        android:enabled="false"
+        android:padding="@dimen/paddingForButtonScore"
+        android:text="@string/counter_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnScoreA"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreB"
+        app:layout_constraintVertical_bias="@dimen/biasForButtonScoreVertical" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_start_shower"
+        android:padding="@dimen/paddingForButton"
+        android:text="@string/start_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnCancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/biasForButtonStartVertical" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_cancel_shower"
+        android:enabled="false"
+        android:padding="@dimen/paddingForButton"
+        android:text="@string/cancelTheGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnStartGame"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/biasForButtonStartVertical" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

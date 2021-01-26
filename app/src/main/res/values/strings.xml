@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">First-Project</string>
+    <string name="registerCommands">Register commands and start</string>
+    <string name="showListOfWinners">Show list of winners</string>
+    <string name="time">Time</string>
+    <string name="secondTeam">Second team</string>
+    <string name="firstTeam">First team</string>
+    <string name="cancelTheGame">Cancel the game</string>
+    <string name="start_game">Start game</string>
+    <string name="timer_game_screen">Time: </string>
+    <string name="nameOfATeam">Name A</string>
+    <string name="nameOfBTeam">Name B</string>
+    <string name="score">score</string>
+    <string name="counter_plus">+1</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="winnerText">Winner: </string>
+    <string name="scoreText">Score: </string>
+    <string name="textShare">Share results of the game</string>
+    <string name="clearList">Clear List</string>
+</resources>

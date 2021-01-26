@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".WinnersScreen">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfWinners"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightForList"
+        android:layout_weight="@dimen/weightForList"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightForList"
+        android:layout_weight="@dimen/wightForBottomLayout"
+        android:orientation="vertical"
+        android:background="@color/grey_blue"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClearList"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopForButtonClearList"
+            android:enabled="true"
+            android:padding="@dimen/paddingForButton"
+            android:background="@drawable/btn_cancel_shower"
+            android:text="@string/clearList" />
+
+    </LinearLayout>
+
+</LinearLayout>
