@@ -10,11 +10,11 @@
     <dimen name="scoreTextSize">20sp</dimen>
     <dimen name="timerSize">50sp</dimen>
     <dimen name="paddingName">15dp</dimen>
-    <dimen name="nameSize">15sp</dimen>
+    <dimen name="nameSize">20sp</dimen>
     <dimen name="biasForTimerVertical">0</dimen>
     <dimen name="biasForNameVertical">0.3</dimen>
     <dimen name="biasForScoreVertical">0.05</dimen>
-    <dimen name="textSizeForScore">40sp</dimen>
+    <dimen name="textSizeForScore">30sp</dimen>
     <dimen name="paddingForButtonScore">50dp</dimen>
     <dimen name="biasForButtonScoreVertical">0.4</dimen>
     <dimen name="biasForButtonStartVertical">0.95</dimen>
